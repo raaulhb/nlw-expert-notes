@@ -40,7 +40,7 @@ export function App() {
     ? notes.filter(note => note.content.toLocaleLowerCase().includes(search.toLocaleLowerCase())) : notes
 
   return (
-    <div className='mx-auto max-w-6xl my-12 space-y-6'>
+    <div className='mx-auto max-w-6xl my-12 space-y-6 px-5'>
       <img src={logo} alt="logo" />
       <form className="w-full">
         <input 
@@ -53,7 +53,7 @@ export function App() {
       <div className="h-px bg-slate-700" />
       
 
-      <div className='grid grid-cols-3 auto-rows-[250px] gap-6'>
+      <div className='grid grid-cols-1 md:grid-cols-3 auto-rows-[250px] gap-6'>
         <NewNoteCard onNoteCreated={onNoteCreated}/>
         {filteredNotes.map(note => {
           return <NoteCard key={note.id} note={note} />
