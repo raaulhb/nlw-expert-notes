@@ -1,7 +1,7 @@
 # 📝 Expert-Notes
 A note-taking project that records and transcribes notes using the Speech Recognition API,<br> developed during the NLW (Next Level Week) by @Rocketseat.
   
-## 👨‍💻Functionality
+## 👨‍💻 Functionality
 - [x] Users can record the note or write it and save it.
 - [x] Functional search bar.
 
